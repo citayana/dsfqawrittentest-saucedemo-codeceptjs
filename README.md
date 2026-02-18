@@ -89,3 +89,8 @@ Test report will be generated inside the `output` folder.
 - Playwright
 - Node.js
 - JavaScript
+
+## Approach
+
+The automation script was created using CodeceptJS with Playwright. ID selectors were used for main interactive elements such as username, password, and login button, while class selectors were used for validation elements like titles and error messages. Explicit waits were added to ensure synchronization, preventing flakiness due to loading delays. The script assumes stable DOM elements, publicly accessible website, and available credentials. Each test scenario is independent and the tests run consistently on Windows with Node.js and Playwright configured.
+
